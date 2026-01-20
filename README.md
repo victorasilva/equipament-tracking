@@ -104,8 +104,8 @@ Crie um arquivo `.env` na raiz do projeto:
 
 ```env
 # Portas dos servidores
-TCP_PORT=8080
-HTTP_PORT=3000
+TCP_PORT=3000
+HTTP_PORT=8080
 
 # Autenticação da API REST
 API_KEY=sk_Hg5adyl8QvkI0jQxOpf5Ks6I4s18KwfE
@@ -184,11 +184,11 @@ Retorna a última localização conhecida de um dispositivo autorizado.
 **Exemplo com cURL:**
 ```bash
 curl -H "X-API-Key: sk_Hg5adyl8QvkI0jQxOpf5Ks6I4s18KwfE" \
-     http://localhost:3000/v1/location/0A3F73
+     http://localhost:8080/v1/location/0A3F73
 ```
 
 **Exemplo com Insomnia/Postman:**
-- URL: `http://localhost:3000/v1/location/0A3F73`
+- URL: `http://localhost:8080/v1/location/0A3F73`
 - Method: `GET`
 - Header: `X-API-Key: sk_Hg5adyl8QvkI0jQxOpf5Ks6I4s18KwfE`
 

@@ -3,12 +3,12 @@
  * Execute apenas este arquivo
  */
 
-import { InMemoryLocationRepository } from './src/domain/repositories/InMemoryLocationRepository';
-import { ProcessLocationData } from './src/application/use-cases/ProcessLocationData';
-import { ProcessHeartbeat } from './src/application/use-cases/ProcessHeartbeat';
-import { GetDeviceLastLocation } from './src/application/use-cases/GetDeviceLastLocation';
-import { TCPServer } from './src/infrastructure/tcp/TCPServer';
-import { HttpServer } from './src/infrastructure/http/HttpServer';
+import { InMemoryLocationRepository } from '../src/domain/repositories/InMemoryLocationRepository';
+import { ProcessLocationData } from '../src/application/use-cases/ProcessLocationData';
+import { ProcessHeartbeat } from '../src/application/use-cases/ProcessHeartbeat';
+import { GetDeviceLastLocation } from '../src/application/use-cases/GetDeviceLastLocation';
+import { TCPServer } from '../src/infrastructure/tcp/TCPServer';
+import { HttpServer } from '../src/infrastructure/http/HttpServer';
 import net from 'net';
 import axios from 'axios';
 
